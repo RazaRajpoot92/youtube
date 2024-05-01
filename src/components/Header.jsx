@@ -1,5 +1,6 @@
 import {useDispatch} from "react-redux"
 import { toggleMenu } from "../utils/appSlice"
+import {Link} from "react-router-dom"
 
 const menu = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
 const youtubeLogo = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsHa1f7bO91Miz1KKeYpRo95dW2FceKO-yAAW1CzueFQ&s"
@@ -14,10 +15,12 @@ const Header = ()=>{
     }
     return(
         
-        <div className="flex w-full shadow-md justify-between p-4 border h-16 items-center">
+        <div className="flex top-0 sticky w-full bg-slate-50 shadow-md justify-between p-4 border h-16 items-center">
             <div className="flex gap-1 items-center">
                 <img onClick={()=>handleToggle()} className="h-6 cursor-pointer" src={menu} alt="" />
-                <img className="h-14" src={youtubeLogo} alt="" />
+                <Link to={"/"} >
+                    <img className="h-14" src={youtubeLogo} alt="" />
+                </Link>
             </div>
             <div className="flex items-center">
                 <input className="border text-gray-600 border-gray-400 p-1 w-[430px] pl-4 rounded-l-full focus:outline-none" type="text" />
