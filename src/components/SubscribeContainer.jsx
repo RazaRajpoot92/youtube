@@ -18,10 +18,10 @@ const SubscribeContainer = () => {
 
         <div className='flex items-center'>
 
-            <button className='w-20 h-10 ml-4 bg-gray-300 text-black rounded-full'>Like</button>
-            <button className='w-20 h-10 ml-4 bg-gray-300 text-black rounded-full'>Share</button>
-            <button className='px-4 py-2  ml-4 bg-gray-300 text-black rounded-full'>Download</button>
-            <button className='px-4 py-2  ml-4 bg-gray-300 text-black rounded-full'>Save</button>
+            <button className='w-20 h-10 ml-4 bg-gray-200 text-black rounded-full'>Like</button>
+            <button className='w-20 h-10 ml-4 bg-gray-200 text-black rounded-full'>Share</button>
+            <button className='px-4 py-2  ml-4 bg-gray-200 text-black rounded-full'>Download</button>
+            <button className='px-4 py-2  ml-4 bg-gray-200 text-black rounded-full'>Save</button>
 
         </div>
     </div>
