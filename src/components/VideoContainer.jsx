@@ -21,13 +21,14 @@ const VideoContainer = ()=>{
     }
 
     return(
-        <div className="p-3 gap-1 flex flex-wrap">
+        <div className=" gap-1 flex justify-center flex-wrap">
             {
                 videos.map((video)=>(
                     <Link key={video.id} to={"/watch?v="+video.id} >
-                        {
-                            video.statistics.viewCount > 600000? <TopView key={video.id} info = {video} />: <VideoCart info={video} />
+                        {       // For top rated videos cards, extra styling.
+                            // video.statistics.viewCount > 600000? <TopView key={video.id} info = {video} />: <VideoCart info={video} />
                         }
+                        <VideoCart info={video} />
 
                     </Link>
                 ))

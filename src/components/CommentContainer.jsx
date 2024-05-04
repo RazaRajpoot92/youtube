@@ -100,7 +100,7 @@ const CommentsList = ({comments}) => {
 const CommentContainer = ()=>{
 
     return(
-        <div className="p-3 w-[51%]">
+        <div className="p-3 ">
             <h1 className="font-bold text-3xl">Comments:</h1>
 
             <div className="  ">

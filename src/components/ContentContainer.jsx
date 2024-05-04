@@ -4,8 +4,8 @@ import DescriptionCon from './DescriptionCon'
 
 const ContentContainer = () => {
   return (
-    <div className='pl-4  w-[52%]'>
-        <h1 className='font-semibold text-2xl'>BAMBIHA BOLE (Official Video) Amrit Maan</h1>
+    <div className='pl-4'>
+        <h1 className='font-semibold text-2xl'>PUSHPA PUSHPA (Telugu Lyrical) Pushpa 2 The Rule | Allu Arjun</h1>
 
         <SubscribeContainer />
 
